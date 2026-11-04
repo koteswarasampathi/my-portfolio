@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <a href="#home" class="logo">MyPortfolio.</a>
+
+        <div class="menu-icon" id="menu-icon">☰</div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Venkata Koteswara Rao Sampathi</h1>
+        <h2>I'm a <span id="typing"></span></h2>
+        <p>
+          I am a passionate fresher with a strong foundation in web development.
+          I enjoy creating responsive and user-friendly websites using modern
+          web technologies.
+        </p>
+        <p>Let's build something amazing together!</p>
+        <div class="home-buttons">
+          <a href="#projects" class="btn"> View My Work </a>
+
+          <a href="#contact" class="btn btn-outline"> Contact Me </a>
+
+          <a
+            href="resume/venkata _koteswararao_sampathi_resume.docx"
+            class="btn"
+            download
+          >
+            Download CV
+          </a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/koteswarasampathi"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/venkata-koteswara-rao-sampathi-15836a382/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="home-image">
+        <img src="images/profilephoto.jpeg" alt="My Profile Picture" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+      <h2 class="heading reveal">About <span>Me</span></h2>
+      <div class="about-content reveal">
+        <h3>Frontend Developer</h3>
+        <p>
+          I have completed my Bachelor's degree in Computer Science. I am
+          intrested in frontend development and continuously improving my
+          skills. My goal is to build responsive and user-friendly web
+          applications using modern web technologies.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section class="skills" id="skills">
+      <h2 class="heading reveal">My <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skill-Box reveal">
+          <h3>HTML</h3>
+          <p>Web page structure and semantic markup.</p>
+        </div>
+        <div class="skill-Box reveal">
+          <h3>CSS</h3>
+          <p>Styling and layout of web pages.</p>
+        </div>
+        <div class="skill-Box reveal">
+          <h3>JavaScript</h3>
+          <p>interactive web elements and dynamic content.</p>
+        </div>
+        <div class="skill-Box reveal">
+          <h3>React.js</h3>
+          <p>Component-based UI development.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+
+      <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <h3>Job Portal Application</h3>
+
+          <p>
+            Developed a Job Portal application where students can search and
+            apply for jobs, while recruiters can post and manage job openings.
+          </p>
+
+          <h4>Technologies:</h4>
+          <p>React.js, Node.js, Express.js, MongoDB</p>
+
+          <a href="https://github.com/koteswarasampathi/job-portal" target="_blank">View Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <h3>Sales Data Analysis</h3>
+
+          <p>
+            Analyzed sales data using SQL to retrieve, filter, group and
+            summarize business information. Created a dashboard to understand
+            sales performance.
+          </p>
+
+          <h4>Technologies:</h4>
+          <p>SQL, Python, Power BI</p>
+
+          <a href="https://github.com/koteswarasampathi/Sales_Data_Analytics" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading reveal">Contact <span>Me</span></h2>
+
+      <form id="contact-form" class="contact-form reveal">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Full Name" />
+
+          <input type="email" id="email" placeholder="Email Address" />
+        </div>
+
+        <input type="text" id="subject" placeholder="Subject" />
+
+        <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <p id="form-status"></p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Copyright &copy; 2026 Koteswara Sampathi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>
